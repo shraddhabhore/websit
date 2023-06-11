@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shraddha Bhore</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/81e670a118.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header starts here -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="Images/logo.png" alt="" class="logo"> -->
+                <p class="logo"><span>S</span>H<span>R</span>A<span>D</span>D<span>H</span><span>A</span><span class="dot">.</span></p>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Student</p>
+                <h1>Hi, I'm <span>Shraddha</span> Bhore</h1>
+            </div>
+        </div>
+    <!-- <hr style="border: 1px solid pink; width: 5%;margin: auto; margin-top: 22.1%;"> -->
+    </div>
+
+    <!-- about section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="C:\Users\Dell\Desktop\website nwe\Images\Snapchat-694084413.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p class="para">Hi, I’m Shraddha Bhore, a student of electronic and telecommunication engineering at SSGMCE. I have a passion for software development and I enjoy creating applications and websites that solve problems and provide value. I have experience in using various technologies and tools such as Java, HTML, CSS, JavaScript , MySQL ,and basic of Python. Some of the projects I have worked on include a website development, portfolio. I also have skills in data structures, algorithms, and object-oriented programming. In my free time, I like to learn new skills, read books, and listen to music. This portfolio showcases some of my best work and achievements in software development.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>C/C++</span><br>HTML</li>
+                            <li><span>CSS</span><br>JavaScript</li>
+                            <li><span>ReactJs</span><br>MySQL</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span class="font">2017 SSC</span><br>Shri Sant Gajanan Maharaj English School, Shegaon</li>
+                            <li><span class="font">2019 HSC</span><br>Saraswati Jr Collage</li>
+                            <li><span class="font">2023 BE</span><br>Shri Sant Gajanan Maharaj College of Engineering, Shegaon</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- projects section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/web2.avif" class="img1">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p>This website is made with HTML, CSS and JavaScript</p>
+                        
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/a2.jpg">
+                    <div class="layer">
+                        <h3>Fingerprint Door Lock System</h3>
+                        <p>This project is made using
+                            Arduino UNO, Bluetooth HC-05 and Arduino Software</p>
+                        <a href="#" title="This is hardware project with no repository"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>E-commerce Frontend Website</h3>
+                        <p>This is a Responsive E-commerce frontend website made using HTML, CSS and JavaScript</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#header" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- contact page -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i><a href="mailto:shraddhabhore19@gmail.com" class="yes">shraddhabhore19@gmail.com</a></p>
+                    <p><i class="fa-solid fa-phone"></i><a href="tel:7972455619" class="yes">7972455619</a></p>
+                    <!-- updated -->
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/shraddha-bhore-1753a2193/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=" https://instagram.com/_shraddha_0219?igshid=ZDc4ODBmNjlmNQ==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/shraddhabhore19?t=6S3_1HVW_gbmc3TP8bFrQQ&s=03" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="C:\Users\Dell\Desktop\website nwe\Images\MY_RESUME.pdf" download="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <!-- Don't worry, I will not spam you! -->
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Shraddha Bhore.</p>
+        </div>
+    </div>
+    
+ <!-- JS  -->
+ <script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+ </script>
+
+ <script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right ="0";
+    }
+    function closemenu(){
+        sidemenu.style.right ="-150px";
+    }
+ </script>
+ <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzOKtOhU62rp-o6z3wxKtqvrq1H9zV9sOJNy4iVXjRFB9ITeiK3tkrc_jCQr-8DWeF4/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Response submitted successfully!"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
